@@ -1,4 +1,4 @@
-# RESET PASSWORD RB411 WITH OPENWRT 10.03 Backfire
+## RESET PASSWORD RB411 WITH OPENWRT 10.03 Backfire
 
 
 - Ligue a RB e aguarde até que o LED verde comece a piscar;
@@ -10,11 +10,12 @@
 $ telnet 192.168.1.1
 
 - Dentro da RB digite os seguintes comandos:
-
+```
 # mount / -o remount,rw
 # passwd
 (informe a nova senha)
 (informe novamente a nova senha)
+```
 
 - Desligue a RB e ligue-a normalmente (sem pressionar botao algum);
 - Coloque o IP do computador na faixa do IP da RB;
@@ -22,7 +23,9 @@ $ telnet 192.168.1.1
 - Entre com o usuario root e senha root;
 
 - Para acessar via ssh é necessário passar um parâmetro adicional na linha de comando, pois a versão 10.03 do OpenWRT possui uma versão desatualizada do SSH server. Alinha de comando é:
+```
 $ ssh -o KexAlgorithms=+diffie-hellman-group1-sha1 root@192.168.1.1
+```
 - No qual, 192.168.1.1 é o IP da RB.
 
 
