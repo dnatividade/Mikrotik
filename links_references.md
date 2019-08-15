@@ -1,3 +1,4 @@
+![docs](https://img.shields.io/badge/docs-PtBR-green)
 #### Mikrotik do Zero
 https://www.youtube.com/watch?v=AacInam_yl8
 
